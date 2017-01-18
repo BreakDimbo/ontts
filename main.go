@@ -20,10 +20,10 @@ Usage: ontts [options]
 
 单次合成模式选项:
     -t <text>                	待合成的文本
-    -o <file>               	音频输出路径 
+    -o <file>               	音频输出路径
 
 合成服务模式选项:
-    -d <dir>                    音频保存的目录 
+    -d <dir>                    音频保存的目录
     -s <digit>                  合成速度级别(1-10),数值越小速度越快，越耗CPU[默认为1]
     -r <addr>                   redis连接地址
     -rp <pass>                  redis密码
@@ -33,7 +33,7 @@ Usage: ontts [options]
     -ll <level>                 日志输出级别(debug,info,warn,error)
 
 其他:
-    -h                          查看帮助 
+    -h                          查看帮助
 `
 
 func main() {
@@ -52,7 +52,7 @@ func main() {
 	flag.BoolVar(&help, "h", false, "Help")
 
 	flag.StringVar(&opts.TTSParams, "tp", "voice_name = xiaoqi, text_encoding = UTF8, sample_rate = 8000, speed = 50, volume = 50, pitch = 50, rdn = 2", "TTS合成参数")
-	flag.StringVar(&opts.LoginParams, "lp", "appid = 5808ae7e, work_dir = .", "登录参数")
+	flag.StringVar(&opts.LoginParams, "lp", "appid = 587862ee, work_dir = .", "登录参数")
 	flag.StringVar(&opts.RedisAddr, "r", ":6379", "redis连接地址")
 	flag.StringVar(&opts.RedisPass, "rp", "", "redis连接密码")
 	flag.StringVar(&opts.OutDir, "d", "", "音频输出目录")
