@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/imroc/ontts/server"
+	"github.com/BreakDimbo/ontts/server"
 
 	"github.com/imroc/log"
 )

@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/imroc/ontts/xf"
+	"github.com/BreakDimbo/ontts/xf"
 
 	"github.com/garyburd/redigo/redis"
 	"github.com/imroc/log"
